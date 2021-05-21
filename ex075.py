@@ -14,15 +14,9 @@ else:
 if 3 not in numeros:
     print('O número 3 não foi está em nenhuma posição')
 else:
-    print(f'O número 3 aparece na posição de número \033[1;4m{numeros.index(3)}\033[m')
+    print(f'O número 3 aparece na posição de número \033[1;4m{numeros.index(3) + 1}\033[m')
 
-# if numeros[0] % 2 == 0:
-#     print(f'Os números pares digitados foram: {numeros[0]}')
-if numeros[1] % 2 == 0:
-    print(f'{numeros[1]}')
-elif numeros[2] % 2 == 0:
-    print(f'{numeros[2]}')
-elif numeros[3] % 2 == 0:
-    print(f'{numeros[3]}')
-elif numeros[4] % 2 == 0:
-    print(f'{numeros[4]}')
+print('Os valores pares digitados foram:', end='')
+for n in numeros:
+    if n % 2 == 0:
+        print(n, end=' ')
