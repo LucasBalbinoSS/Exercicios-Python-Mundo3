@@ -14,6 +14,7 @@ print()
 
 print('\033[1;4mOS COLOCADOS EM ORDEM ALFABÉTICA\033[m:')
 print(sorted(campeonato))
+print()
 
 print('\033[1;4mEM QUAL ÍNDICE SE ENCONTRA O BOTAFOGO?\033[m:')
 print(campeonato.index('Botafogo'))
