@@ -17,4 +17,4 @@ print(sorted(campeonato))
 print()
 
 print('\033[1;4mEM QUAL ÍNDICE SE ENCONTRA O BOTAFOGO?\033[m:')
-print(campeonato.index('Botafogo'))
+print('O time do Botafogo se encontra na {}° posição'.format(campeonato.index('Botafogo') + 1))
