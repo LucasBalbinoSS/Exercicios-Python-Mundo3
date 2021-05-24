@@ -4,7 +4,7 @@ while True:
     num = int(input('Digite um número: '))
 
     if num in numeros:
-        print('\033[33mEsse valor já existe na lista, não vou adicionar..\033[m')
+        print('\033[33mEsse valor já existe na lista, não vou adicionar...\033[m')
         print()
 
     else:
