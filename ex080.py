@@ -13,4 +13,5 @@ for cont in range(0, 5):
         lista.insert(0, num)
         print('\033[35;1mValor adicionado na primeira posição da lista!\033[m')
         print(lista)
+
 print(lista)
