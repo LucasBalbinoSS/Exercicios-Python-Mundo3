@@ -16,9 +16,11 @@ while True:
     if continuar[0] == 'N':
         break
 
-    while continuar[0] != 'S' and continuar[0] != 'N':
+    while continuar[0] != 'S':
         continuar = str(input('Quer continuar? [ S / N ] ')).strip().upper()
         print()
+        if continuar[0] == 'N':
+            break
 
 print('=-' * 30)
 
