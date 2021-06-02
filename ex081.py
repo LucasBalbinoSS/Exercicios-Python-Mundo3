@@ -1,5 +1,3 @@
-from time import sleep as slp
-
 listaNum = list()
 contadorde5 = 0
 
