@@ -22,7 +22,7 @@ for i, v in enumerate(numeros):
     if v == maior:
         print(f'{i}... ', end='')
 
-print(f'\nO \033[1;4mmenor\033[m valor digitado foi {min(numeros)}', end='')
+print(f'\nO \033[1;4mmenor\033[m valor digitado foi {menor}', end=' ')
 
 for i, v in enumerate(numeros):
     if v == menor:
