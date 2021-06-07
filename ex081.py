@@ -20,7 +20,12 @@ while True:
 print('=-' * 35)
 print(f'Sua lista ficou assim: {listaNum}')
 print('=-' * 35)
-print(f'Foram digitados {len(listaNum)} números!')
+
+if len(listaNum) == 1:
+    print('Você digitou apenas 1 número...')
+else:
+    print(f'Foram digitados {len(listaNum)} números!')
+
 print(f'A lista de forma descrescente se torna {sorted(listaNum, reverse=True)}')
 print('=-' * 35)
 
