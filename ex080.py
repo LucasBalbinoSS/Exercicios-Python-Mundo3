@@ -2,16 +2,17 @@ lista = list()
 
 for cont in range(0, 5):
     num = int(input('Digite um número: '))
-    if len(lista) == 0:
+    if cont == 0 or num > lista[-1]:
         lista.append(num)
-        print('\033[35;1mPrimeiro valor dicionado à lista!\033[m')
-
-    elif len(lista) == 1 and num >= lista[0]:
-        lista.append(num)
-        print('\033[35;1mValor adicionado na segunda posição!\033[m')
+        print('\033[35;1mValor adicionado ao final da lista!\033[m')
     else:
-        lista.insert(0, num)
-        print('\033[35;1mValor adicionado na primeira posição da lista!\033[m')
-        print(lista)
+        pos = 0
+        while pos < len(lista):
+            if num <= lista[pos]:
+                lista.insert(pos, num)
+                print(f'valor adicionado na posição {pos} da lista...')
+                break
+            pos += 1
 
+print('-=' * 30)
 print(lista)
