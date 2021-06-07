@@ -20,5 +20,4 @@ while True:
         break
 
 print('-=' * 30)
-print()
 print(f'Você digitou os valores {sorted(numeros)}')
