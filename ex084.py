@@ -1,7 +1,7 @@
 database = list()
 nome = list()
 peso = list()
-contador = 0
+cont = 0
 
 while True:
     nome.append(str(input('Digite seu nome: ')).strip().title())
