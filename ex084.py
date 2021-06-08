@@ -16,6 +16,11 @@ while True:
     if resp == 'N':
         break
 
+for p in range(len(listaDados)):
+    print(listaDados[p][1])
+    if listaDados[p][1] > listaDados[p][1]:
+        print(f'O maior valor encontrado foi {listaDados[p][1]}')
+
 print('=-' * 30)
 print(' ' * 15, '\033[34;1;4mANÁLISE DE DADOS\033[m')
 print()
