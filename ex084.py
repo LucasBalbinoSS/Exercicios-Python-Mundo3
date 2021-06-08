@@ -1,10 +1,9 @@
-database = list()
-nome = list()
-peso = list()
-cont = 0
+listaDados = list()
+pessoas = list()
 
-while True:
-    nome.append(str(input('Digite seu nome: ')).strip().title())
-    peso.append(int(input('Digite seu peso: ')))
-    database.append(nome[:])
-    database.append(peso[:])
+for p in range(0, 5):
+    pessoas.append(str(input('Digite seu nome: ')).strip().title())
+    pessoas.append(int(input('Digite seu peso: Kg')))
+
+    listaDados.append(pessoas[:])
+    pessoas.clear()
