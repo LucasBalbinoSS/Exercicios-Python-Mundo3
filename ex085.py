@@ -13,11 +13,19 @@ for cont in range(0, 7):
         lista_nums_impar.append(num)
 
 print()
+if len(lista_nums_par) == 0:
+    print('Você não digitou nenhum número par...')
+else:
+    print(f'Você digitou {len(lista_nums_par)} números pares.')
+    print('Sua lista completa de números pares em ordem crescente: ', end=' ')
+    for n in sorted(lista_nums_par):
+        print(f'{n}... ', end='')
 
-print('Sua lista completa de números pares em ordem crescente: ', end=' ')
-for n in sorted(lista_nums_par):
-    print(f'{n}... ', end='')
-
-print('\nSua lista de números ímpares em ordem crescente: ', end=' ')
-for n2 in sorted(lista_nums_impar):
-    print(f'{n2}... ', end='')
+print()
+if len(lista_nums_impar) == 0:
+    print('\nVocê não digitou nenhum número ímpar...')
+else:
+    print(f'Você digitou {len(lista_nums_impar)} números ímpares.')
+    print('Sua lista de números ímpares em ordem crescente: ', end=' ')
+    for n2 in sorted(lista_nums_impar):
+        print(f'{n2}... ', end='')
