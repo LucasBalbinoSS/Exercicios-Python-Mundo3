@@ -11,3 +11,13 @@ for cont in range(0, 7):
         lista_nums_par.append(num)
     else:
         lista_nums_impar.append(num)
+
+print()
+
+print('Sua lista completa de números pares em ordem crescente: ', end=' ')
+for n in sorted(lista_nums_par):
+    print(f'{n}... ', end='')
+
+print('\nSua lista de números ímpares em ordem crescente: ', end=' ')
+for n2 in sorted(lista_nums_impar):
+    print(f'{n2}... ', end='')
